@@ -7,6 +7,7 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
+use Chenpkg\LaravelHelpers\Support\Batch;
 use Chenpkg\LaravelHelpers\Traits\HasScopeCollection;
 
 /**
@@ -56,3 +57,23 @@ dd_sql($builder);
 
 // 获取数据
 $result = $builder->get();
+
+
+// 批量修改数据
+// 来源于 https://github.com/mavinoo/laravelBatch
+$update = [
+    [
+        'id'   => 1,
+        'name' => '李四'
+    ],
+    [
+        'id'   => 5,
+        'name' => '小红'
+    ],
+    [
+        'id'   => 5,
+        'name' => '李雷雷'
+    ]
+];
+
+Batch::update(new User(), $update, 'id');
