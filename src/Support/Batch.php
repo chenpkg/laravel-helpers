@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by Cestbon.
  * Author Cestbon <734245503@qq.com>
@@ -131,7 +132,7 @@ class Batch
      */
     private static function getFullTableName(Model $table)
     {
-        return $table->getConnection()->getTablePrefix().$table->getTable();
+        return $table->getConnection()->getTablePrefix() . $table->getTable();
     }
 
     /**
@@ -227,6 +228,6 @@ class Batch
                 $safeJsonData[$key] = $value;
             }
         }
-        return $asArray ? $safeJsonData : json_encode($safeJsonData);
+        return $asArray ? $safeJsonData : json_encode($safeJsonData, JSON_UNESCAPED_UNICODE);
     }
 }
