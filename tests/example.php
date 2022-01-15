@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Created by Cestbon.
  * Author Cestbon <734245503@qq.com>
  * Date 2021/12/14 15:44
  */
 
-require __DIR__.'/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 use Chenpkg\LaravelHelpers\Support\Batch;
 use Chenpkg\LaravelHelpers\Traits\HasScopeCollection;
@@ -77,3 +78,10 @@ $update = [
 ];
 
 Batch::update(new User(), $update, 'id');
+
+// 分页添加自定义数据
+$result = User::where('age', '>', 18)->metaPaginate();
+
+$result->addMeta('count', 1);
+
+$result->setMeta(['count' => 1]);
