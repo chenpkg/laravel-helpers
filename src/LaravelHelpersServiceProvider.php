@@ -21,7 +21,7 @@ class LaravelHelpersServiceProvider extends ServiceProvider
      */
     protected function bindMacro()
     {
-        // 可添加自定义数据分页方法
+        // 添加自定义数据分页方法
         Builder::macro('metaPaginate', function (
             $perPage = null,
             $columns = ['*'],

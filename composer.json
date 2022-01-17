@@ -2,12 +2,10 @@
     "name": "chenpkg/laravel-helpers",
     "description": "laravel helpers",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "cestbon",
-            "email": "734245503@qq.com"
-        }
-    ],
+    "authors": [{
+        "name": "cestbon",
+        "email": "734245503@qq.com"
+    }],
     "require": {
         "php": "^8.0",
         "laravel/framework": "^8.0"
@@ -19,5 +17,12 @@
         "files": [
             "src/helpers.php"
         ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Chenpkg\\LaravelHelpers\\LaravelHelpersServiceProvider"
+            ]
+        }
     }
 }
