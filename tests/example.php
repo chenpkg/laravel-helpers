@@ -8,8 +8,8 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use Chenpkg\LaravelHelpers\Support\Batch;
-use Chenpkg\LaravelHelpers\Traits\HasScopeCollection;
+use LaravelHelpers\Support\Batch;
+use LaravelHelpers\Traits\HasScopeCollection;
 
 /**
  * 用户模型如下
