@@ -1,11 +1,11 @@
 <?php
 
-namespace Chenpkg\LaravelHelpers;
+namespace LaravelHelpers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\Paginator;
-use Chenpkg\LaravelHelpers\Support\MetaPaginator;
+use LaravelHelpers\Support\MetaPaginator;
 
 class LaravelHelpersServiceProvider extends ServiceProvider
 {

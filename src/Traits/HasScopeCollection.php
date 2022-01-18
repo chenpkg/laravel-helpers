@@ -1,11 +1,12 @@
 <?php
+
 /**
  * Created by Cestbon.
  * Author Cestbon <734245503@qq.com>
  * Date 2021/12/14 15:52
  */
 
-namespace Chenpkg\LaravelHelpers\Traits;
+namespace LaravelHelpers\Traits;
 
 trait HasScopeCollection
 {

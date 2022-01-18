@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Chenpkg\\LaravelHelpers\\": "src"
+            "LaravelHelpers\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -21,7 +21,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Chenpkg\\LaravelHelpers\\LaravelHelpersServiceProvider"
+                "LaravelHelpers\\LaravelHelpersServiceProvider"
             ]
         }
     }

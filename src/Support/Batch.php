@@ -6,7 +6,7 @@
  * Date 2021/12/14 16:20
  */
 
-namespace Chenpkg\LaravelHelpers\Support;
+namespace LaravelHelpers\Support;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;

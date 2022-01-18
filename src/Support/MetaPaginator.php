@@ -1,6 +1,6 @@
 <?php
 
-namespace Chenpkg\LaravelHelpers\Support;
+namespace LaravelHelpers\Support;
 
 use Illuminate\Pagination\LengthAwarePaginator;
 
