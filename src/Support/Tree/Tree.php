@@ -16,6 +16,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Enumerable;
 use JsonSerializable;
 use LaravelHelpers\Exceptions\InvalidArgumentException;
+use LaravelHelpers\Support\Batch;
 use Traversable;
 
 class Tree
@@ -231,7 +232,7 @@ class Tree
 
         // 进行批量修改
         if ($updateData) {
-            $this->model->newInstance()->batchUpdate($updateData, $this->primaryKey);
+            Batch::update($this->model->newInstance(), $updateData, $this->primaryKey);
         }
 
         $this->recordPath = false;
