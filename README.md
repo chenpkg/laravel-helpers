@@ -2,15 +2,20 @@
 
 <p align="center"> laravel helpers.</p>
 
-## Installing
+## 功能
+
+-   Batch 模型批量修改
+-   Tree 模型无限极分类树
+
+## 安装
 
 ```shell
 $ composer require chenpkg/laravel-helpers
 ```
 
-## Usage
+## 使用
 
-[使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/tests/example.php)
+[Batch 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/tests/example.php)
 
 [Tree 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/src/Support/Tree/README.MD)
 
