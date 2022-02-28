@@ -3,7 +3,7 @@
 ```php
 use LaravelHelpers\Support\Tree\Tree;
 
-$tree = new Tree();
+$tree = Tree::create();
 
 // 设置主键，默认为 id
 $tree->setPrimaryKey('id');
@@ -21,7 +21,7 @@ $tree->setGradeKey('grade');
 $tree->getChildPath($parent);
 
 // 设置集合数据
-$collection = User::where('vip', 1)->get();
+$collection = Category::where('grade', 1)->get();
 $tree->setCollection($collection);
 
 // 设置模型
@@ -34,4 +34,13 @@ $tree->make();
 
 // 修正分类 path
 $tree->fixPath();
+```
+
+### 使用
+
+```php
+Tree::create()->setModel(new User())->make();
+// or
+$collection = Category::where('grade', 1)->get();
+Tree::create()->setCollection($collection)->make();
 ```
