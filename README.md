@@ -17,7 +17,7 @@ $ composer require chenpkg/laravel-helpers
 
 ## 使用
 
-[Scope 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/tests/example.php)
+### [Scope 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/tests/example.php)
 
 ### Batch 批量修改
 
@@ -44,7 +44,7 @@ $update = [
 Batch::update(new User(), $update, 'id');
 ```
 
-[Tree 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/src/Support/Tree/README.MD)
+### [Tree 使用示例](https://github.com/chenpkg/laravel-helpers/tree/master/src/Support/Tree/README.MD)
 
 ### MetaPaginator
 
