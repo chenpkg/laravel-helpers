@@ -85,12 +85,19 @@ class Tree
      */
     protected $grades = [];
 
-    /**
-     *
-     */
     public function __construct()
     {
         $this->tree = collect([]);
+    }
+
+    /**
+     * Creates a new Tree.
+     *
+     * @return static
+     */
+    public static function create(): static
+    {
+        return new static();
     }
 
     /**
